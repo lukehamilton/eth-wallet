@@ -28,7 +28,7 @@ export default class Home extends Component {
           <h4>Accounts on Test Net</h4>
           { this.state.web3.eth.accounts.map(account =>{
             return (
-              <div>{ account }</div>
+              <div key={account}>{ account }</div>
             )
           })}
         </div>
